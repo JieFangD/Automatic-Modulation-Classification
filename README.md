@@ -16,10 +16,9 @@ We provide the source code for the implementation of conventional approaches (Ma
 - keras 2.2.5
 - Matlab R2017a
 
-## File
-
+## Source Code
 ### Matlab
-- Test_ML.m: test the conventional likelohood-based approach of maximum likelihood (ML) and hybrid likelihood ratio test (HLRT)
+- Test_ML.m test the conventional likelohood-based approach of maximum likelihood (ML) and hybrid likelihood ratio test (HLRT)
   - Adjust the use of ML or HLRT
   - MaximunLikelihood.m
   - HybridLRT.m: set the preferred searching space for amplitude and phase
