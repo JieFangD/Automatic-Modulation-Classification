@@ -18,7 +18,7 @@ We provide the source code for the implementation of conventional approaches (Ma
 
 ## Source Code
 ### Matlab
-- Test_ML.m test the conventional likelohood-based approach of maximum likelihood (ML) and hybrid likelihood ratio test (HLRT)
+- Test_ML.m: test the conventional likelohood-based approach of maximum likelihood (ML) and hybrid likelihood ratio test (HLRT)
   - Adjust the use of ML or HLRT
   - MaximunLikelihood.m
   - HybridLRT.m: set the preferred searching space for amplitude and phase
@@ -26,7 +26,12 @@ We provide the source code for the implementation of conventional approaches (Ma
 - Test_Cumu.m: test the conventional feature-based approach of cumulant
   - Cumulant.m: adjust the feature used for the classification
 
-- AMC_raw.m: generate the training data for NN model and plot the figure in our paper
+- Users need to customize the *config.py* and *Polar-NN-MULT.ipynb* as
+  - `N` : Block length 
+  - `K` : Information length
+  - `ebn0` : Desired SNR range 
+
+- AMC_raw.m: generate the training data for NN model and visualize the figure used in our paper
   - sig2pic.m: transform the received signal to image
   - sig2pic_accu.m: transform the received signal to image with historical information
   - sig2pic_gaussian.m: transform the received signal to image by Gaussian distribution
