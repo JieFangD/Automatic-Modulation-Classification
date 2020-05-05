@@ -26,27 +26,14 @@ We provide the source code for the implementation of conventional approaches (Ma
 - Test_Cumu.m: test the conventional feature-based approach of cumulant
   - Cumulant.m: adjust the feature used for the classification
 
-- Users need to customize the *config.py* and *Polar-NN-MULT.ipynb* as
-  - `N` : Block length 
-  - `K` : Information length
-  - `ebn0` : Desired SNR range 
-
 - AMC_raw.m: generate the training data for NN model and visualize the figure used in our paper
   - sig2pic.m: transform the received signal to image
   - sig2pic_accu.m: transform the received signal to image with historical information
   - sig2pic_gaussian.m: transform the received signal to image by Gaussian distribution
 
 ### Python
-- Users need to customize the *config.py* and *Polar-NN-MULT.ipynb* as
-  - `N` : Block length 
-  - `K` : Information length
-  - `ebn0` : Desired SNR range 
-  - `numOfWord` : Desired batch size 
-  - `bp_iter_num` : The number of iteration for BP
-  - `RNN` : Whether using recurrent architecture (1 = yes)
-  - `quantize_weight` : Different mechanism for weight quantization (0 for non-quantize, 1 for normal, 2 for binarized, 3 for bin, 4 for binarized bin)
-  - `bin_bit` : The number of different value
-  - `binary_prec` : The number of weight precision (binary_prec must >= bin_bit)
+- classify_cnn_pic.py: transform the received signal to image in I/Q domain 
+  - python3 classify_cnn_pic.py [training data] [testing data] [model size]
 
 ## Contact Information
 
