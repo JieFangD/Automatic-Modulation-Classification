@@ -32,8 +32,17 @@ We provide the source code for the implementation of conventional approaches (Ma
   - sig2pic_gaussian.m: transform the received signal to image by Gaussian distribution
 
 ### Python
-- classify_cnn_pic.py: transform the received signal to image in I/Q domain 
+- classify_cnn_pic.py: transform the received signal to image in I/Q domain and train CNN model
   - python3 classify_cnn_pic.py [training data] [testing data] [model size]
+python3 classify_cnn_pic.py ../Data/raw5000_1000_8.mat ../Data/raw1000_1000_8.mat 2
+
+- classify_cnnpolar_pic.py: transform the received signal to image in polar domain and train CNN model
+  - Adjust whether using Gaussian distribution to generate image
+  - python3 classify_cnnpolar_pic.py [training data] [testing data] [model size]
+python3 classify_cnnpolar_pic.py ../Data/raw5000_1000_8.mat ../Data/raw1000_1000_8.mat 2
+
+- util.py
+  - Adjust the generated image with accumulated information or not
 
 ## Contact Information
 
